@@ -1,4 +1,4 @@
 module "buckets-and-account" {
-  source   = "buckets"
+  source   = "./buckets"
   env_name = "prod"
 }
