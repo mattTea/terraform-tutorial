@@ -19,6 +19,8 @@ wait_for_user
 
 terraform import module.buckets-and-account.google_storage_bucket.bucket-for-project-config steam-habitat-260913/prod-configuration-files-for-project
 terraform import module.buckets-and-account.google_storage_bucket.bucket-for-project-data steam-habitat-260913/prod-data-files-for-project
+terraform import 'module.buckets-and-account.google_storage_bucket_iam_member.account-bucket-access[0]' 'b/prod-configuration-files-for-project roles/storage.objectViewer serviceaccount:prod-microservice-name@steam-habitat-260913.iam.gserviceaccount.com'
+terraform import 'module.buckets-and-account.google_storage_bucket_iam_member.account-bucket-access[1]' 'b/prod-data-files-for-project roles/storage.objectViewer serviceaccount:prod-microservice-name@steam-habitat-260913.iam.gserviceaccount.com'
 
 wait_for_user
 
