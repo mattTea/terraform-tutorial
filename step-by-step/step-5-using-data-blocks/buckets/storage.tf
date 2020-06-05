@@ -1,12 +1,12 @@
 # The bucket and service account names are now prefixed with environment name
 
 resource "google_storage_bucket" "bucket-for-project-config" {
-  name     = "${var.env_name}-new-configuration-files-for-project"
+  name     = "${var.env_name}-configuration-files-for-project"
   location = "EU"
 }
 
 resource "google_storage_bucket" "bucket-for-project-data" {
-  name     = "${var.env_name}-new-data-files-for-project"
+  name     = "${var.env_name}-data-files-for-project"
   location = "EU"
 }
 
