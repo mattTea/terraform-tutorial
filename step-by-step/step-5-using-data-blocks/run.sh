@@ -12,7 +12,7 @@ terraform init
 
 wait_for_user
 
-# This step simply ties the code from steps 1 and 2 into our code from step 3.
+# This step simply ties the code from step 4 into our code from step 5.
 #
 # In reality you wouldn't need this as you would just be extending an existing
 # terraform codebase/state.
