@@ -10,7 +10,7 @@ You'll need...
 - A GCP project set up
 - Your local shell set up and logged into GCP already with `gcloud auth` (terraform will use your identity by default)
 
-Now simply change google project in the [providers.tf] file and then...
+Now simply change google project in the [providers.tf] files, cd into each `step-by-step` directory and then...
 
 - `terraform init`
 - `terraform plan`
@@ -23,4 +23,3 @@ Change or add some resources and then run `plan` and `apply` again to see your n
 ## Other Resources
 
 - [Hashicorp Learn](https://learn.hashicorp.com/terraform)
--
