@@ -7,7 +7,7 @@ data "google_service_account" "existing-service-account" {
 }
 
 module "buckets-and-account" {
-  source = "buckets"
-  env_name = local.env_name
-  service_account_name = data.google_service_account.existing-service-account
+  source                = "./buckets"
+  env_name              = local.env_name
+  service_account_email = data.google_service_account.existing-service-account.email
 }
