@@ -3,6 +3,6 @@
 # The resource's name in Terraform is "bucket-for-project", which we'll use later.
 
 resource "google_storage_bucket" "bucket-for-project-config" {
-  name               = "configuration-files-for-project"
-  location           = "EU"
+  name     = "configuration-files-for-project"
+  location = "EU"
 }
