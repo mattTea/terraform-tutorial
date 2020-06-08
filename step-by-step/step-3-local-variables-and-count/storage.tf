@@ -1,13 +1,13 @@
 # Now we have two buckets
 
 resource "google_storage_bucket" "bucket-for-project-config" {
-  name               = "configuration-files-for-project"
-  location           = "EU"
+  name     = "configuration-files-for-project"
+  location = "EU"
 }
 
 resource "google_storage_bucket" "bucket-for-project-data" {
-  name               = "data-files-for-project"
-  location           = "EU"
+  name     = "data-files-for-project"
+  location = "EU"
 }
 
 # Service account as before
