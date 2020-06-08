@@ -13,8 +13,6 @@ rm -f *.tfplan
 cp ../step-by-step/step-4-variables-and-modules/*.tf .
 cp -r ../step-by-step/step-4-variables-and-modules/buckets .
 
-wait_for_user
-
 terraform init
 
 terraform plan -out plan.tfplan

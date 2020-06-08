@@ -14,8 +14,6 @@ rm -rf buckets
 cp ../step-by-step/step-5-using-data-blocks/*.tf .
 cp -r ../step-by-step/step-5-using-data-blocks/buckets .
 
-wait_for_user
-
 terraform init
 
 # NOTE: we remove the service account from the state here as we're simulating

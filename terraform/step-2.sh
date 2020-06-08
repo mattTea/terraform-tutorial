@@ -12,8 +12,6 @@ rm -f *.tf
 rm -f *.tfplan
 cp ../step-by-step/step-2-resources-and-dependencies/*.tf .
 
-wait_for_user
-
 terraform init
 
 terraform plan -out plan.tfplan
